@@ -1,9 +1,0 @@
-{
-  "run": {
-    "type": "file",
-    "file": "index.html",
-    "ignoreCurrent": true,
-    "task": "global/Wikepedia",
-    "url": ""
-  }
-}
