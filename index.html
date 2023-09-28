@@ -19,10 +19,16 @@
     #fe {
       border-radius: 10px;
     }
+
+    hr {
+      height: 2px;
+      width: 2px;
+      color: black;
+    }
   </style>
 </head>
 
-<body class="bg-gradient-to-r from-violet-100 to-pink-100" onload="myFunction()">
+<body onload="myFunction()">
   <div id="loading"></div>
   <header class="text-gray-600 body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -37,9 +43,9 @@
           -900">Home</a>
         <a href="#team" class="mr-5 hover:text-indigo-900">Team</a>
         <a href="/project/project.html" class="mr-5 hover:text-indigo-900">Projects</a>
-        <a class="mr-5 hover:text-indigo-900" href="/price.html">Price</a>
+        <a class="mr-5 hover:text-indigo-900" href="/payment.html">Price</a>
       </nav>
-      <a href="#contact"><button class="inline-flex items-center bg-gray-100 border-9 py-1 px-3 focus:outline-none hover:bg-indigo-400 rounded text-base mt-3 md:mt-0">Contact
+      <a href="/sign_in.html"><button class="inline-flex items-center bg-gray-100 border-9 py-1 px-3 focus:outline-none hover:bg-indigo-400 rounded text-base mt-3 md:mt-0">Sign In
         </button></a>
     </div>
   </header>
@@ -58,7 +64,7 @@
         </div>
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img class="object-cover object-center rounded" alt="hero" src="https://source.unsplash.com/720x600/?coding">
+        <img class="object-cover object-center rounded" alt="hero" src="https://source.unsplash.com/720x600/?coding,programming">
       </div>
     </div>
   </section>
@@ -228,11 +234,25 @@
       </div>
     </div>
   </section>
-  <section class="text-gray-600 body-font">
+  <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <h2 class="text-center text-lg font-semibold leading-8 text-gray-900">Trusted by the world’s most innovative teams</h2>
+      <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+        <img class="col-span-2 max-h-18 w-full object-contain lg:col-span-1" src="/company_logos/google-2015-logo-svgrepo-com.svg" alt="Transistor" width="158" height="48">
+        <img class="col-span-2 max-h-20max-h-18 w-full object-contain lg:col-span-1" src="/company_logos/amazon-2-logo-svgrepo-com.svg" alt="Reform" width="158" height="48">
+        <img class="col-span-2 max-h-28max-h-28 w-full object-contain lg:col-span-1" src="/company_logos/Alphabet_Inc.-Logo.wine.svg" alt="Tuple" width="158" height="48">
+        <img class="col-span-2 max-h-15 w-full object-contain sm:col-start-2 lg:col-span-1" src="/company_logos/oracle-6.svg" alt="SavvyCal" width="158" height="48">
+        <img class="col-span-2 col-start-2 max-h-22 w-full object-contain sm:col-start-auto lg:col-span-1" src="/company_logos/microsoft-logo-svgrepo-com.svg" alt="Statamic" width="158" height="48">
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <section class=" text-gray-600 body-font">
     <hr>
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Growth</h1>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Reviews</h1>
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever our growth is upgraded that is shown below by your trust on us.</p>
       </div>
       <div class="flex flex-wrap -m-4 text-center">
@@ -279,44 +299,81 @@
       </div>
     </div>
   </section>
-  <section id="contact" class="text-gray-600 body-font relative">
-    <hr>
-    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-      <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-        <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
-        <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-          <div class="lg:w-1/2 px-6">
-            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-            <p class="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
-          </div>
-          <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-            <a class="text-indigo-500 leading-relaxed">scod404@email.com</a>
-            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-            <p class="leading-relaxed">1234567890</p>
-          </div>
-        </div>
-      </div>
-      <div id="fe" class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
-        <p class="leading-relaxed mb-5 text-gray-600">Please send your feedback for we can know our mistakes and your trust. </p>
-        <div class="relative mb-4">
-          <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-          <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-        </div>
-        <div class="relative mb-4">
-          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-          <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-        </div>
-        <div class="relative mb-4">
-          <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-          <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-        </div>
-        <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
-        <p class="text-xs text-gray-500 mt-3">Please send your feedback to us.As we can know you and give you your type of content.</p>
-      </div>
+  <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
+      <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
-  </section>
+    <div id="contact" class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact</h2>
+      <p class="mt-2 text-lg leading-8 text-gray-600">Fill up your details and send to us we will definitely talk to you.</p>
+    </div>
+    <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+      <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+        <div>
+          <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+          <div class="mt-2.5">
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div>
+          <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+          <div class="mt-2.5">
+            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
+          <div class="mt-2.5">
+            <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+          <div class="mt-2.5">
+            <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
+          <div class="relative mt-2.5">
+            <div class="absolute inset-y-0 left-0 flex items-center">
+              <label for="country" class="sr-only">Country</label>
+              <select id="country" name="country" class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+                <option>India</option>
+                <option>USA</option>
+                <option>EU</option>
+              </select>
+              <svg class="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+          <div class="mt-2.5">
+            <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+          </div>
+        </div>
+        <div class="flex gap-x-4 sm:col-span-2">
+          <div class="flex h-6 items-center">
+            <button type="button" class="bg-gray-200 flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" role="switch" aria-checked="false" aria-labelledby="switch-1-label">
+              <span class="sr-only">Agree to policies</span>
+              <span aria-hidden="true" class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
+            </button>
+          </div>
+          <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
+            By selecting this, you agree to our
+            <a href="#" class="font-semibold text-indigo-600">privacy&nbsp;policy</a>.
+          </label>
+        </div>
+      </div>
+      <div class="mt-10">
+        <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
+      </div>
+    </form>
+  </div>
   <footer class="text-gray-400 bg-gray-900 body-font">
     <hr>
     <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
@@ -360,7 +417,7 @@
               <a class="text-gray-400 hover:text-white">Customer</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white">Pricing</a>
+              <a href="/payment.html" class="text-gray-400 hover:text-white">Pricing</a>
             </li>
             <li>
               <a class="text-gray-400 hover:text-white">Platform</a>
@@ -372,7 +429,7 @@
               <a class="text-gray-400 hover:text-white">SCod Desktop</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white">CEO</a>
+              <a href="/ceo.html" class="text-gray-400 hover:text-white">CEO</a>
             </li>
             <li>
               <a class="text-gray-400 hover:text-white">Business</a>
@@ -407,13 +464,13 @@
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-400 hover:text-white">Company</a>
+              <a href="/sign_in.html" class="text-gray-400 hover:text-white">Sign In</a>
             </li>
             <li>
               <a class="text-gray-400 hover:text-white">About</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white">Blog</a>
+              <a href="/blog.html" class="text-gray-400 hover:text-white">Blog</a>
             </li>
             <li>
               <a class="text-gray-400 hover:text-white">Carerrs</a>
